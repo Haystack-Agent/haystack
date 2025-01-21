@@ -119,8 +119,6 @@ class ToolInvoker:
             If no tools are provided or if duplicate tool names are found.
         """
 
-        msg = "The `ToolInvoker` component is experimental and its API may change in the future."
-        warnings.warn(msg)
 
         if not tools:
             raise ValueError("ToolInvoker requires at least one tool to be provided.")
